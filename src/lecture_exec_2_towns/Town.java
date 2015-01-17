@@ -12,6 +12,19 @@ public class Town {
 		this.population = population;
 	}
 	
+	//overriding .hashCode() and .equals()
 	
+	public int hashCode(){
+				
+		return (this.name + this.state + this.population).hashCode(); 
+	}
+	
+	public boolean equals(Object o){
+		if (o == null){return false;}
+		if (! (o instanceof Town)){return false;}
+		
+		Town other = (Town)o;
+		return this.hashCode() == other.hashCode();
+	}
 	
 }

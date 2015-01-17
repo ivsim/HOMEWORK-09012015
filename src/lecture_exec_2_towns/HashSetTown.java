@@ -18,28 +18,33 @@ public class HashSetTown {
 		townCollection.add(new Town("vidin", "BG", 2123));
 		
 		Town townToCompare = new Town("pernik", "BG", 2300);
-		Town townToCompare2 = town3;
+		Town townToCompare2 = new Town("gorna orj", "BG", 2654);;
 		
-		if (townToCompare.name.equals(town1.name) && townToCompare.state.equals(town1.state) && townToCompare.population == town1.population){
-			System.out.println("True");
-		}
-		else{System.out.println("False");}
 		
-		if (townToCompare2.name.equals(town3.name) && townToCompare2.state.equals(town3.state) && townToCompare2.population == town3.population){
-			townCollection.remove(town3);
-		}
+		System.out.println(townToCompare.equals(town1));
 			
+		if (townToCompare2.equals(town3)){
+			townCollection.remove(town3);
+		}		
 
 		for (Town x : townCollection){
 			System.out.println(x.name);
 			}
 
-
 		
 		
 		
 		
 		
+		
+//		if (townToCompare.name.equals(town1.name) && townToCompare.state.equals(town1.state) && townToCompare.population == town1.population){
+//		System.out.println("True");
+//	}
+//	else{System.out.println("False");}
+//	
+//	if (townToCompare2.name.equals(town3.name) && townToCompare2.state.equals(town3.state) && townToCompare2.population == town3.population){
+//		townCollection.remove(town3);
+//	}	
 		
 		
 	}
